@@ -1,0 +1,64 @@
+.tvShow {
+  border: 1px solid rgba(89,89,89, 1);
+  background-color: rgba(238,238,238, 1);
+  color: black;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+
+  .tvShow-hour {
+    margin-left: 5px;
+    float: left;
+    font-size: 1rem;
+  }
+
+  .tvShow-title {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .tvShow-content {
+    font-style: italic;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .see-more {
+    width: 100%;
+    border: none;
+    background-color: rgba(65,131,215, 1);
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.rating-container {
+  display: flex !important;
+  justify-content: center;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: #b0c4de;
+}
+
+.filled {
+  color: #1e90ff;
+}
+
+.see-more {
+  width: 100%;
+  border: none;
+  background-color: rgba(65,131,215, 1);
+  color: white;
+  cursor: pointer;
+}
+
+.popover-header {
+  color: black !important;
+}
+
+ng-deep .popup .popover-header{
+  color: black !important;
+}

@@ -1,0 +1,201 @@
+.one-day-calendar {
+	max-width: 1300px;
+	height: 800px;
+	background-color: rgba(210,215,211, 0.1);
+	padding-right: 10px;
+	border-radius: 20px;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.one-day-calendar-left {
+	width: 20%;
+	height: 100%;
+	float: left;
+	background-color: rgba(65,131,215, 1);
+	border-right: 1px solid blue;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	color: white;
+}
+
+.one-day-calendar-left-day {
+	text-align: center;
+}
+
+.arrow-left {
+  margin-right: 10px;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.arrow-right {
+  margin-left: 10px;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.one-day-calendar-left-day-number {
+	font-size: 5rem;
+  align-items: center;
+  display: inline-flex;
+}
+
+
+.one-day-calendar-left-day-month {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.one-day-calendar-right{
+	width: 80%;
+	float: right;
+}
+
+.on-day-container-right {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+  margin-left: 10px;
+  color: black;
+
+}
+
+.on-day-container-right::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.on-day-container-right img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.on-day-container-right span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.checked {
+    color: orange;
+}
+
+.star-rating {
+	float: right;
+	text-align: center;
+	margin-bottom: 2px;
+	font-size:1vw;
+}
+
+.one-day-button-see-more {
+	float: right;
+	border: 1px solid blue;
+	border-radius: 5px;
+	display: inline;
+	padding: 2px 5px;
+	font-weight: 300;
+	color: blue;
+	cursor: pointer;
+}
+
+.one-day-button-see-more:hover {
+	background-color: blue;
+	color: white;
+}
+@media screen and (max-width:800px) {
+	.one-day-calendar {
+		margin: 10px;
+		padding: 0;
+	}
+
+    .one-day-calendar-left {
+		margin: auto;
+		float: none;
+		display: block;
+    width: 100%;
+		height: 200px;
+		border-radius: 20px;
+	}
+
+	.one-day-calendar-right {
+		margin: auto;
+		float: none;
+		display: block;
+		width: 100%;
+		padding: 0px;
+	}
+
+	.on-day-container-right {
+
+		padding: 0px;
+		margin: auto;
+		margin-top: 10px;
+	 }
+
+	.star-rating {
+		margin-top: 5px;
+	}
+
+	.star-rating .text {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	.one-day-calendar {
+		margin: 10px;
+		padding: 0;
+	}
+
+	.one-day-calendar-left {
+		margin: auto;
+		float: none;
+		display: block;
+		width: 100%;
+		height: 200px;
+		border-radius: 20px;
+	}
+
+	.one-day-calendar-right {
+		margin: auto;
+		float: none;
+		display: block;
+		width: 100%;
+		padding: 0px;
+	}
+
+	.on-day-container-right {
+		text-align: center;
+		padding: 0px;
+		margin: auto;
+		margin-top: 10px;
+	 }
+
+	.on-day-container-right img {
+		margin: auto;
+		width: 100%;
+		float: none;
+		display: block;
+	}
+
+	.one-day-button-see-more {
+		margin: auto;
+		float: none;
+		display: block;
+	}
+
+	.star-rating {
+		margin: auto;
+		margin-top: 2px;
+		float: none;
+		display: block;
+	}
+
+	.star-rating .text {
+		display: none;
+	}
+}

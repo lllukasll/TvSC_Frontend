@@ -1,0 +1,59 @@
+.row {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.col {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.banner {
+  position: relative;
+  max-height: 350px;
+
+  .abs {
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .title {
+    margin-left: 10px;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    color: white;
+  }
+
+  .next-episode {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    right: 10px;
+    color: white;
+  }
+}
+
+.content {
+  margin-top: 20px;
+  .image-container {
+    margin: 20px;
+    height: 300px;
+  }
+
+  .image {
+    height: 100%;
+  }
+
+  .title {
+    color: white;
+  }
+
+  .rating {
+
+  }
+}
+
+
+
+

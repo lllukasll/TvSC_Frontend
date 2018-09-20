@@ -1,0 +1,74 @@
+.content {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: rgba(210,215,211, 0.1);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.week-header {
+  background-color: rgba(65,131,215, 1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  .hour {
+    font-size: 0.8rem;
+  }
+
+  .week {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+.col {
+  padding: 0;
+  height: 100%;
+}
+
+.row {
+  margin: 0;
+}
+
+.arrow-left {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.arrow-right {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.day-names {
+  text-align: center;
+  padding: 10px;
+  font-weight: 400;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.weeks {
+  min-height: 1200px
+}
+
+.week-row {
+  height: 200px;
+  border-bottom: 1px solid black;
+}
+
+.week-date {
+  border-right: 1px solid black;
+  overflow: auto;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: 400;
+  background-color: rgba(24,24,24,1);
+}
+
+.disabled {
+  color: rgba(255,255,255, 0.3);
+}
+

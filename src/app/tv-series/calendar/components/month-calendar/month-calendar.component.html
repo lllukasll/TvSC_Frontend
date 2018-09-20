@@ -1,0 +1,55 @@
+<div class="content" *ngIf='tvSeriesArray'>
+
+  <div class="row">
+    <div class="week-header col-12">
+      <div class="row">
+        <div class="col text-center hour">
+          13:10
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center week">
+          <i class="fa fa-caret-left arrow-left" (click)="setPrevMonth()"></i>
+            {{ currentDate.format('MMMM YYYY') }}
+          <i class="fa fa-caret-right arrow-right" (click)="setNextMonth()"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col day-names" *ngFor='let day of dayNames'>
+      {{ day }}
+    </div>
+  </div>
+
+  <div class="weeks">
+    <div *ngFor="let week of weeks" class="row week-row">
+      <ng-container *ngFor="let day of week">
+        <div class="week-date disabled col" *ngIf="!isSelectedMonth(day.mDate)">
+          <div class="card-title">
+            <span class="date-text">{{ day.mDate.date() }}</span>
+          </div>
+        </div>
+        <div class="week-date enabled col"
+             *ngIf="isSelectedMonth(day.mDate)"
+             [ngClass]="{ today: day.today}">
+          <div class="card-title">
+            <span class="date-text">{{ day.mDate.date() }}</span>
+          </div>
+
+          <div *ngFor='let tvSeries of getDayTvSeries(day.mDate.date(), currentDate.month(), currentDate.year())'>
+            <app-tv-show-holder
+              [hour]="tvSeries.hour"
+              [title]='tvSeries.name'
+              [description]='tvSeries.episode'
+              >
+            </app-tv-show-holder>
+          </div>
+
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+</div>

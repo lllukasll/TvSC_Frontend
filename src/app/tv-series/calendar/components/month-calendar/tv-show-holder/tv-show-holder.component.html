@@ -1,0 +1,20 @@
+<ng-template #popContent>
+  <div>{{ description }}</div>
+  <ngb-rating [rate]="3" class="rating-container">
+      <ng-template let-fill="fill" let-index="index">
+        <span class="star" [class.filled]="fill === 100" >&#9733;</span>
+      </ng-template>
+  </ngb-rating>
+  <button class='see-more'>Więcej</button>
+</ng-template>
+<div class="tvShow" [ngbPopover]="popContent"
+                    [popoverTitle]='title'
+                    popoverClass="popup"
+                    container="body">
+  <span class="tvShow-hour">
+    {{ hour }}
+  </span>
+  <span class="tvShow-title">
+    {{ title }}
+  </span>
+</div>

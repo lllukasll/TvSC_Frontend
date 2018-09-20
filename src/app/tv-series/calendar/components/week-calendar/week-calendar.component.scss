@@ -1,0 +1,89 @@
+.content {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: rgba(210,215,211, 0.1);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.week-content {
+  height: 770px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.col {
+  padding: 0;
+  height: 100%;
+}
+
+.col-content {
+  text-align: center;
+  height: 770px;
+  border: 1px solid black;
+}
+
+.week-header {
+  background-color: rgba(65,131,215, 1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.week-header {
+  .hour {
+    font-size: 0.8rem;
+  }
+
+  .week {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+.header {
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+
+.arrow-left {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.arrow-right {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.tvShow {
+  border: 1px solid rgba(89,89,89, 1);
+  background-color: rgba(238,238,238, 1);
+  color: black;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
+  transition: height 1s;
+  .tvShow-hour {
+    font-size: 0.8rem;
+  }
+
+  .tvShow-title {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .tvShow-content {
+    font-style: italic;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .see-more {
+    width: 100%;
+    border: none;
+    background-color: rgba(65,131,215, 1);
+    color: white;
+    cursor: pointer;
+  }
+}

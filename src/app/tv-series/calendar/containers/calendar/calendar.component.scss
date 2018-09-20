@@ -1,0 +1,56 @@
+.content {
+  margin-top: 10px;
+	color: white;
+	width:100%;
+}
+
+.select-date-type {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+.select-date-type ul {
+	margin: 0px;
+  padding: 0;
+}
+
+.select-date-type ul li {
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	border: 1px solid rgba(65,131,215, 1);
+	display: inline;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.select-date-type ul li:hover {
+	background-color: rgb(43, 118, 216);
+}
+
+.select-date-type button {
+  background-color: unset;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.active-data-type {
+  background-color: rgba(65,131,215, 1);
+  cursor: default;
+}
+
+.log-in-calendar-info {
+	max-width: 1300px;
+	margin: auto;
+	margin-top: 20px;
+	text-align: right;
+}
+
+.log-in-button {
+  color : rgba(65,131,215, 1);
+  display: inline;
+  cursor: pointer;
+}

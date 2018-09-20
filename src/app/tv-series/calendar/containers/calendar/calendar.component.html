@@ -1,0 +1,31 @@
+<div class="content">
+  <div class="select-date-type">
+    <ul>
+      <li [class.active-data-type]="choosenCalendar === 'day'"><button (click)='changeCalendar("day")'>Dzień</button></li>
+      <li [class.active-data-type]="choosenCalendar === 'week'"><button (click)='changeCalendar("week")'>Tydzień</button></li>
+      <li [class.active-data-type]="choosenCalendar === 'month'"><button (click)='changeCalendar("month")'>Miesiąc</button></li>
+    </ul>
+  </div>
+  <div class="log-in-calendar-info" >
+    <p class="log-in-button">
+        Zaloguj się
+    </p>
+    aby tworzyć swoje kalendarze i dodawać seriale do ulubionych</div>
+  <div *ngIf='choosenCalendar === "month"'>
+      <app-month-calendar
+        [dayNames]='dayNames'
+        [weeks]='weeks'
+        [sortedDates]='sortedDates'
+        [currentDate]='currentDate'
+        [tvSeriesArray]='tvSeriesArray$ | async'
+        (prevMonth)='prevMonth($event)'
+        (nextMonth)='nextMonth($event)'
+      ></app-month-calendar>
+    </div>
+    <div *ngIf='choosenCalendar === "week"'>
+      <app-week-calendar></app-week-calendar>
+    </div>
+    <div *ngIf='choosenCalendar === "day"'>
+      <app-day-calendar></app-day-calendar>
+    </div>
+</div>

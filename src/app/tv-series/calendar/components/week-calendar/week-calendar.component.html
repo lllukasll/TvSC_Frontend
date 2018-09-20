@@ -1,0 +1,89 @@
+<div class="content row">
+  <div class="week-header col-12">
+
+    <div class="row">
+      <div class="col text-center hour">
+        13:10
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col text-center week">
+        <i class="fa fa-caret-left arrow-left"></i>
+          Tydzień 34, Wrzesień 2018
+        <i class="fa fa-caret-right arrow-right"></i>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-12 week-content">
+    <div class="row">
+      <div class="col">
+        <div class="col-content">
+          <div class="header">
+            1 Niedziela
+          </div>
+
+          <div class="tvShow" (click)="isCollapsed = !isCollapsed"
+            [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+            <div class="tvShow-hour">
+              20:00
+            </div>
+            <div class="tvShow-title">
+              Game of Thrones
+            </div>
+            <div id="collapseExample" *ngIf='isCollapsed' class="tvShow-content">
+                <div>
+                  Ep. 01 Where are you from ?
+                </div>
+                <button class="see-more">Więcej</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col">
+        <div class="col-content">
+          <div class="header">
+            2 Poniedziałek
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="col-content">
+          <div class="header">
+            3 Wtorek
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="col-content">
+          <div class="header">
+            4 Środa
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="col-content">
+          <div class="header">
+            5 Czwartek
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="col-content">
+          <div class="header">
+            6 Piątek
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="col-content">
+          <div class="header">
+            7 Sobota
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
