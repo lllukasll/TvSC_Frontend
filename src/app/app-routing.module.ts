@@ -11,6 +11,10 @@ const routes: Routes = [
       {
         path: 'tvSeries',
         loadChildren: './tv-series/tv-series.module#TvSeriesModule'
+      },
+      {
+        path: 'user',
+        loadChildren: './user/user.module#UserModule'
       }
     ]
   },
