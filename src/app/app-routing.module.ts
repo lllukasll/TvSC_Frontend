@@ -1,20 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ShellComponent } from './home/shell/shell.component';
-import { PageNotFoundComponent } from './home/page-not-found/page-not-found.component';
+import { ContainerComponent } from './components/common/container/container.component';
+import { PageNotFoundComponent } from './components/common/page-not-found/page-not-found.component';
+import { AuthGuardService } from './services/auth-guard.service';
 
 const routes: Routes = [
   {
     path: '',
-    component: ShellComponent,
+    component: ContainerComponent,
     children: [
       {
         path: 'tvSeries',
-        loadChildren: './tv-series/tv-series.module#TvSeriesModule'
+        loadChildren: './tv-series/tv-series.module#TvSeriesModule',
+        canActivate: [AuthGuardService]
       },
       {
         path: 'user',
-        loadChildren: './user/user.module#UserModule'
+        loadChildren: './modules/user.module#UserModule'// './user/user.module#UserModule'
       }
     ]
   },

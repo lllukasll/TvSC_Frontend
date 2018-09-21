@@ -13,7 +13,7 @@ export class TvSeriesService {
   constructor(private http: HttpClient) { }
 
   getTvSeries(): Observable<ITvSeries[]> {
-    return this.http.get<ITvSeries[]>(this.tvSeriesUrl)
+    return this.http.get<ITvSeries[]>(this.tvSeriesUrl, { withCredentials: true })
       .pipe(
         tap(data => console.log(JSON.stringify(data))),
         catchError(this.handleError)

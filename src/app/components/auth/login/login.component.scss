@@ -1,0 +1,56 @@
+.login-container {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-block-start: 40px;
+  
+    .form-signin {
+      width: 100%;
+      max-width: 420px;
+      padding: 15px;
+      margin: auto;
+      background-color: rgba(248, 249, 250, 1);
+  
+      .form-control {
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      }
+  
+      label {
+        display: inline-block;
+        margin-bottom: .5rem;
+      }
+  
+      .checkbox {
+        margin-left: 10px;
+      }
+  
+      .submit-btn {
+        width: 100%;
+        background-color: rgba(65,131,215, 1);
+        border: none;
+        border-radius: 0.5rem;
+        padding: 10px;
+        color: white;
+        font-weight: 400;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+  
+      .submit-btn:hover {
+        background-color: rgba(65,131,215, 0.8);
+      }
+  
+      .form-label-group {
+        position: relative;
+        margin-bottom: 1rem;
+      }
+  
+      .form-label-group > input, .form-label-group > label {
+        padding-left: 10px;
+      }
+    }
+  }
+  
+  
