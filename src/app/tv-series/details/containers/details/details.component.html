@@ -1,11 +1,25 @@
-<div class="row">
+<!--<div class="row">
   <div class="col banner" style="max-height: 300px">
     <img src="../../../../../assets/img/sherlock-banner.jpg" alt="Sherlock banner" style="height: 100%; width: 100%"/>
     <div class="abs title">
       Sherlock
     </div>
-    <div class="abs next-episode">
-      Następny odcinek za : 10dni 20:45:15
+    <div class="rating-container">
+      <div class="rating">
+        <div class="story">
+          Fabuła :
+        </div>
+        <div class="music">
+
+        </div>
+        <div class="music">
+
+        </div>
+        <div class="all">
+
+        </div>
+        <button class="add-rating">Dodaj ocenę</button>
+      </div>
     </div>
   </div>
 </div>
@@ -25,4 +39,292 @@
       Ocena : 7/10 Oceniło : 1000 osób
     </div>
   </div>
+</div>-->
+<div class="row">
+  <div class="col-12 banner">
+    <div class="row title-container">
+      <div class="col-md-9 title">
+            <span>Sherlock</span>
+      </div>
+
+      <!-- TODO : Move to component -->
+
+      <div class="col-md-3 rating">
+          <div class="row element">
+            <div class="col-5 ">
+              <div class="row">
+                <div class="col-10">FABUŁA</div>
+                <div class="col-2 text-right">:</div>
+              </div>
+            </div>
+            <div class="col-7">
+              <ngb-rating [rate]="3" class="rating-container">
+                  <ng-template let-fill="fill" let-index="index">
+                    <span class="star" [class.filled]="fill === 100" >&#9733;</span>
+                  </ng-template>
+              </ngb-rating>
+            </div>
+          </div>
+
+        <div class="row element">
+          <div class="col-5 ">
+            <div class="row">
+              <div class="col-10">MUZYKA</div>
+              <div class="col-2 text-right">:</div>
+            </div>
+          </div>
+          <div class="col-7">
+            <ngb-rating [rate]="3" class="rating-container">
+                <ng-template let-fill="fill" let-index="index">
+                  <span class="star" [class.filled]="fill === 100" >&#9733;</span>
+                </ng-template>
+            </ngb-rating>
+          </div>
+        </div>
+
+        <div class="row element">
+          <div class="col-5 ">
+            <div class="row">
+              <div class="col-10">EFEKTY</div>
+              <div class="col-2 text-right">:</div>
+            </div>
+          </div>
+          <div class="col-7">
+            <ngb-rating [rate]="3" class="rating-container">
+                <ng-template let-fill="fill" let-index="index">
+                  <span class="star" [class.filled]="fill === 100" >&#9733;</span>
+                </ng-template>
+            </ngb-rating>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row element">
+          <div class="col-5 ">
+            <div class="row">
+              <div class="col-10">RAZEM</div>
+              <div class="col-2 text-right">:</div>
+            </div>
+          </div>
+          <div class="col-7">
+            <ngb-rating [rate]="3" class="rating-container">
+                <ng-template let-fill="fill" let-index="index">
+                  <span class="star" [class.filled]="fill === 100" >&#9733;</span>
+                </ng-template>
+            </ngb-rating>
+          </div>
+        </div>
+
+        <div class="row add-rating-btn-container">
+          <div class="col-12 text-center">
+            <button class="add-rating-btn">Dodaj ocenę</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!--------------------->
+
+      <div class="col-md-12 bottom-bar-container">
+        <div class="row">
+          <div class="col-2 hovered">
+            <i class="fa fa-play-circle"></i> Zobacz trailer
+          </div>
+          <div class="col-7 hovered">
+            <i class="fa fa-heart"></i> Dodaj do ulubionych
+          </div>
+          <div class="col-3 text-right">
+            10 dni 20:45:15 do następnego odcinka
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="row">
+      <div class="col-9 description">
+        <div class="title">
+          Sherlock
+        </div>
+        <div class="tv-series-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas ornare aliquet. Vestibulum facilisis arcu vel mi bibendum, quis efficitur tellus porttitor. Nunc laoreet vel augue et hendrerit. Praesent a tortor nisl. Nunc luctus risus ut lorem ornare efficitur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris vulputate est sed velit convallis blandit tincidunt a nibh. Nulla diam massa, vehicula sit amet molestie vitae, finibus vitae orci. Nam molestie metus at felis commodo tempus. Etiam rutrum fermentum nulla sed ultrices. Praesent vestibulum interdum mattis. Curabitur nec fermentum dui. Donec sollicitudin fermentum ex at lacinia.
+        </div>
+      </div>
+      <div class="col-3 text-center">
+        <div class="category category-title">
+          SEZONY
+        </div>
+        <div class="category category-content">
+          4
+        </div>
+
+        <div class="category category-title">
+          ODCINKI
+        </div>
+        <div class="category category-content">
+          12
+        </div>
+
+        <div class="category category-title">
+          DŁUGOŚĆ ODCINKÓW
+        </div>
+        <div class="category category-content">
+          60 minut
+        </div>
+
+        <div class="category category-title">
+          STACJA
+        </div>
+        <div class="category category-content">
+          HBO
+        </div>
+
+        <div class="category category-title">
+          STATUS SERIALU
+        </div>
+        <div class="category category-content">
+          W trakcie emisji
+        </div>
+      </div>
+  </div>
+
+  <div class="row seasons-container">
+    <div class="col-12 header">
+      Sezony :
+    </div>
+    <div class="col-12 seasons">
+
+      <div class="season-header">
+        <div class="row">
+          <div class="col-10 season-title">
+            Sezon 1
+          </div>
+          <div class="col-2 season-watched-container">
+            <div class="row">
+              <div class="col">
+                  Obejrzano
+              </div>
+              <div class="col slider-container">
+                <div class="slider">
+                  <div class="slider-negative">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="season-episode">
+        <div class="row">
+          <div class="col-10 season-title">
+            1. Winter is comming,
+          </div>
+          <div class="col-2 season-watched-container">
+            <div class="row">
+              <div class="col">
+                  Obejrzano
+              </div>
+              <div class="col slider-container">
+                <div class="slider">
+                  <div class="slider-negative">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="season-episode">
+        <div class="row">
+          <div class="col-10 season-title">
+            2. The Kingsroad
+          </div>
+          <div class="col-2 season-watched-container">
+            <div class="row">
+              <div class="col">
+                  Obejrzano
+              </div>
+              <div class="col slider-container">
+                <div class="slider">
+                  <div class="slider-positive">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="season-header">
+        <div class="row">
+          <div class="col-10 season-title">
+            Sezon 2
+          </div>
+          <div class="col-2 season-watched-container">
+            <div class="row">
+              <div class="col">
+                  Obejrzano
+              </div>
+              <div class="col slider-container">
+                <div class="slider">
+                  <div class="slider-negative">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="season-header">
+        <div class="row">
+          <div class="col-10 season-title">
+            Sezon 3
+          </div>
+          <div class="col-2 season-watched-container">
+            <div class="row">
+              <div class="col">
+                  Obejrzano
+              </div>
+              <div class="col slider-container">
+                <div class="slider">
+                  <div class="slider-negative">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="season-header">
+        <div class="row">
+          <div class="col-10 season-title">
+            Sezon 4
+          </div>
+          <div class="col-2 season-watched-container">
+            <div class="row">
+              <div class="col">
+                  Obejrzano
+              </div>
+              <div class="col slider-container">
+                <div class="slider">
+                  <div class="slider-negative">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </div>

@@ -3,57 +3,232 @@
   padding: 0 !important;
 }
 
-.col {
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
   margin: 0 !important;
   padding: 0 !important;
 }
 
 .banner {
-  position: relative;
-  max-height: 350px;
+  background-image: url('../../../../../assets/img/stranget-things-banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 500px;
 
-  .abs {
-    position: absolute;
-    bottom: 10px;
-  }
+  .title-container {
+    height: 100%;
+    position: relative;
 
-  .title {
-    margin-left: 10px;
-    font-size: 3rem;
-    font-weight: 600;
-    letter-spacing: 0.3rem;
-    color: white;
-  }
+    .title {
+      color: rgba(235, 235, 235, 0.7);
+      position: absolute;
+      left: 2%;
+      bottom: 15%;
+    }
 
-  .next-episode {
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    right: 10px;
-    color: white;
+    .title span {
+      background-color: rgba(37, 37, 37, 0.473);
+      font-size: 3rem;
+      font-weight: 500;
+      padding: 10px 20px;
+      width: auto;
+    }
+
+    .rating {
+      position: absolute;
+      color: rgba(235, 235, 235, 0.7);
+      font-size: 2rem;
+      font-weight: 500;
+      right: 2%;
+      bottom: 15%;
+      height: 70%;
+      background-color: rgba(37, 37, 37, 0.473);
+
+      .element {
+        height: 15%;
+        padding: 10px !important;
+
+      }
+
+      hr {
+        margin: 10px 10px 0px 10px;
+        border-top: 2px solid rgba(235, 235, 235, 0.4);
+      }
+
+      .add-rating-btn-container {
+        position: absolute;
+        bottom: 10%;
+        width: 100%;
+
+        .add-rating-btn {
+          width: 80%;
+          height: 70%;
+          font-size: 1rem;
+          font-weight: 400;
+          border: 1px solid rgba(65,131,215, 1);
+          border-radius: 10px;
+          color: rgba(65,131,215, 1);
+          background-color: rgba(255, 255, 255, 0);
+          cursor: pointer;
+        }
+
+        .add-rating-btn:hover {
+          background-color: rgba(65,131,215, 0.3);
+        }
+      }
+
+      .rating-container {
+        display: flex !important;
+        justify-content: center;
+      }
+
+      .star {
+        font-size: 2rem;
+        margin-left: 5px;
+        margin-right: 5px;
+        color: #b0c4de;
+      }
+
+      .filled {
+        color: #1e90ff;
+      }
+    }
+
+    .bottom-bar-container {
+      background-color: rgba(37, 37, 37, 0.473);
+      position: absolute;
+      bottom: 0;
+      height: 7%;
+      color: #1e90ff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-weight: 500;
+      letter-spacing: 2px;
+      padding: 0 3% !important;
+
+      .hovered {
+        cursor: pointer;
+      }
+
+      .hovered:hover {
+        color: #1e8fffc0;
+      }
+    }
+
   }
 }
 
 .content {
-  margin-top: 20px;
-  .image-container {
-    margin: 20px;
-    height: 300px;
+  background-color: rgba(30, 29, 37, 1);
+
+  .description {
+    padding: 20px 10% 0 3% !important;
+    color: rgba(255, 255, 255, 0.623);
+
+    .title {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .tv-series-description {
+      font-size: 1.2rem;
+    }
   }
 
-  .image {
-    height: 100%;
+  .category {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.459);
+    padding: 5px 0 ;
   }
 
-  .title {
-    color: white;
+  .category-title {
+    background-color: rgba(60, 59, 64, 1)
   }
 
-  .rating {
+  .seasons-container {
+    padding: 20px 3% !important;
+    color: rgba(255, 255, 255, 0.623);
 
+    .header {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 20px !important;
+    }
+
+    .seasons {
+      width: 100%;
+
+      .season-header {
+        background-color: rgba(60, 59, 64, 1);
+        cursor: pointer;
+
+        .season-watched-container {
+        }
+      }
+
+      .season-episode {
+        background-color: rgba(131, 131, 134, 1);
+      }
+
+      .season-header ,.season-episode {
+        font-size: 1.4rem;
+        padding: 5px;
+        border-bottom: 1px solid black;
+
+        .season-title {
+          padding-left: 2% !important;
+        }
+
+        .season-watched-container {
+          padding-right: 1% !important;
+          padding-left: 1% !important;
+          cursor: auto;
+
+          .slider-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .slider {
+              height: 70%;
+              width: 70%;
+              border-radius: 10px;
+              background-color: rgba(255, 255, 255, 0.466);
+              cursor: pointer;
+
+              .slider-negative {
+                width: 50%;
+                height: 100%;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                background-color: rgba(0, 0, 0, 0.767);
+              }
+
+              .slider-positive {
+                float: right;
+                width: 50%;
+                height: 100%;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                background-color: #1e90ff;
+              }
+            }
+          }
+        }
+      }
+
+      .season-header:hover {
+        background-color: rgba(60, 59, 64, 0.8);
+      }
+    }
   }
+
+
 }
-
-
-
 

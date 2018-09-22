@@ -18,14 +18,14 @@ export class AuthEffects  {
     switchMap(payload => {
       return this.authService.logIn(payload.email, payload.password).pipe(
         map((user) => {
-          console.log("Login : " + user);
+          console.log('Login : ' + user);
           return new LogInSuccess();
         }),
         catchError((error => {
           console.log(error);
           return of(new LogInFailure({error: error}));
         }))
-      )
+      );
     })
   );
 
@@ -53,7 +53,7 @@ export class AuthEffects  {
           console.log(error);
           return of(new SignUpFailure({error: error}))
         })
-      )
+      );
     })
   );
 
@@ -67,18 +67,18 @@ export class AuthEffects  {
   SignUpFailure: Observable<any> = this.actions.pipe(
     ofType(AuthActionTypes.SIGNUP_FAILURE),
     tap((error) => console.log(error.payload.error.error.errors))
-  )
+  );
 
   @Effect({dispatch: false})
   Logout: Observable<any> = this.actions.pipe(
     ofType(AuthActionTypes.LOGOUT),
     switchMap(() => {
       return this.authService.logout().pipe(
-        map(() => {console.log("Poprawnie wylogowano")}),
+        map(() => {console.log('Poprawnie wylogowano'); }),
         catchError((error) => {
           return of(console.log(error));
         })
-      )
+      );
     })
-  )
+  );
 }

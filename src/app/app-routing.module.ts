@@ -12,7 +12,7 @@ const routes: Routes = [
       {
         path: 'tvSeries',
         loadChildren: './tv-series/tv-series.module#TvSeriesModule',
-        canActivate: [AuthGuardService]
+        // canActivate: [AuthGuardService]
       },
       {
         path: 'user',
