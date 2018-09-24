@@ -44,7 +44,7 @@
   <div class="col-12 banner">
     <div class="row title-container">
       <div class="col-md-9 title">
-            <span>Sherlock</span>
+            <span>Stranger Things</span>
       </div>
 
       <!-- TODO : Move to component -->
@@ -128,7 +128,7 @@
 
       <div class="col-md-12 bottom-bar-container">
         <div class="row">
-          <div class="col-2 hovered">
+          <div class="col-2 hovered" (click)="toogleTrailer()">
             <i class="fa fa-play-circle"></i> Zobacz trailer
           </div>
           <div class="col-7 hovered">
@@ -148,7 +148,7 @@
   <div class="row">
       <div class="col-9 description">
         <div class="title">
-          Sherlock
+          Stranger Things
         </div>
         <div class="tv-series-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas ornare aliquet. Vestibulum facilisis arcu vel mi bibendum, quis efficitur tellus porttitor. Nunc laoreet vel augue et hendrerit. Praesent a tortor nisl. Nunc luctus risus ut lorem ornare efficitur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris vulputate est sed velit convallis blandit tincidunt a nibh. Nulla diam massa, vehicula sit amet molestie vitae, finibus vitae orci. Nam molestie metus at felis commodo tempus. Etiam rutrum fermentum nulla sed ultrices. Praesent vestibulum interdum mattis. Curabitur nec fermentum dui. Donec sollicitudin fermentum ex at lacinia.
@@ -327,4 +327,13 @@
     </div>
   </div>
 
+</div>
+
+<div id="overlay" [ngClass]="{'overlay-on': trailerOn}">
+  <video muted controls id="myVideo">
+    <source src="../../../../../assets//mp4/stranger-things.mp4" type="video/mp4">
+  </video>
+  <div class="close-trailer">
+    <button class="close-btn" (click)="toogleTrailer()">X</button>
+  </div>
 </div>

@@ -7,6 +7,7 @@ import {NgbRatingConfig} from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./details.component.scss']
 })
 export class DetailsComponent implements OnInit {
+  trailerOn = false;
 
   constructor(config: NgbRatingConfig) {
     config.max = 5;
@@ -14,6 +15,10 @@ export class DetailsComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  toogleTrailer() {
+    this.trailerOn = !this.trailerOn;
   }
 
 }
