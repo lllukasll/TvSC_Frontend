@@ -1,0 +1,52 @@
+<div class="sidebar-container" [ngClass]="{'open' : navbarOpen, 'closed' : !navbarOpen}">
+  <a class="title" (click)="toogleNavbar()">
+    <span [ngClass]="{'hide' : !navbarOpen}">TvSC Admin</span>
+    <i class="fa fa-bars" [ngClass]="{'closebtn' : navbarOpen, 'closeBtn-closed' : !navbarOpen}"></i>
+  </a>
+  <a class="item-container" routerLink="/admin/dashboard" >
+    <span>
+      <i class="icon fa fa-columns" [ngClass]="{'item' : !navbarOpen}" title="Dashboard"></i>
+      <span [ngClass]="{'hide' : !navbarOpen}">
+        Dashboard
+      </span>
+    </span>
+  </a>
+  <a class="item-container" routerLink="/admin/tvSeries">
+    <span>
+      <i class="icon fa fa-tv" [ngClass]="{'item' : !navbarOpen}" title="Seriale"></i>
+      <span [ngClass]="{'hide' : !navbarOpen}">
+        Seriale
+      </span>
+    </span>
+  </a>
+  <a class="item-container" routerLink="/admin/users">
+      <i class="icon fa fa-users" [ngClass]="{'item' : !navbarOpen}" title="Użytkownicy"></i>
+      <span [ngClass]="{'hide' : !navbarOpen}">
+        Użytkownicy
+      </span>
+  </a>
+  <a class="item-container" routerLink="/admin/messages">
+    <span>
+      <i class="icon fa fa-envelope" [ngClass]="{'item' : !navbarOpen}" title="Wiadomości"></i>
+      <span [ngClass]="{'hide' : !navbarOpen}">
+        Wiadomości
+      </span>
+    </span>
+  </a>
+  <a class="item-container" routerLink="/admin/notifications">
+    <span>
+      <i class="icon fa fa-flag" [ngClass]="{'item' : !navbarOpen}" title="Zgłoszenia"></i>
+      <span [ngClass]="{'hide' : !navbarOpen}">
+        Zgłoszenia
+      </span>
+    </span>
+  </a>
+  <a class="item-container" routerLink="">
+    <span>
+      <i class="icon fa fa-undo" [ngClass]="{'item' : !navbarOpen}" title="TvSC"></i>
+      <span [ngClass]="{'hide' : !navbarOpen}">
+        TvSC
+      </span>
+    </span>
+  </a>
+</div>

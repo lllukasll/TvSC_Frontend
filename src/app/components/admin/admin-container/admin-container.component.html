@@ -1,0 +1,7 @@
+<app-admin-sidebar
+    (navbarClicked)='onNavbarChanged($event)'
+></app-admin-sidebar>
+<div class="main" [ngClass]="{'main-open' : navbarOpen, 'main-closed' : !navbarOpen}">
+    <router-outlet></router-outlet>
+</div>
+

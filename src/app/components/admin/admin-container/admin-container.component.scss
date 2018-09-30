@@ -1,0 +1,15 @@
+.main {
+    color: white;
+}
+
+.main-open {
+    margin-left: 220px;
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.main-closed {
+    margin-left: 50px;
+    transition: margin-left .5s;
+    padding: 16px;
+}

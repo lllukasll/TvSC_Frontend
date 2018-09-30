@@ -1,0 +1,84 @@
+.sidebar-container {
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.open {
+    width: 220px !important;
+    @media screen and (max-width: 400px) {
+        width: 100% !important;
+    }
+}
+
+.closed {
+    width: 50px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.open a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+    .icon {
+        margin-right: 10px;
+    }
+}
+
+.closed a {
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    color: white;
+    margin: auto;
+}
+
+.item {
+    font-size: 20px;
+    margin: auto;
+}
+
+.sidebar-container a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar-container .closebtn {
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.closeBtn-closed {
+    margin: auto;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
